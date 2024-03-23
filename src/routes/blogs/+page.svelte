@@ -42,7 +42,9 @@
 				aria-label="Go to next page">→</button
 			>
 		</div>
+	{:else if data.error}
+		<div class="alert alert-error">{data.error}</div>
 	{:else}
-		<p>No posts found.</p>
+		<div class="alert alert-warning">No data found</div>
 	{/if}
 </div>
