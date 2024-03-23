@@ -11,6 +11,8 @@
 		>
 			{@html data.post.content}
 		</article>
+	{:else if data.error}
+		<p>{data.error}</p>
 	{:else}
 		<p>Loading.</p>
 	{/if}
