@@ -12,8 +12,8 @@
 			{@html data.post.content}
 		</article>
 	{:else if data.error}
-		<p>{data.error}</p>
+		<div class="alert alert-error">{data.error}</div>
 	{:else}
-		<p>Loading.</p>
+		<div class="alert alert-warning">No data found</div>
 	{/if}
 </div>
